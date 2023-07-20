@@ -269,7 +269,6 @@ abstract class _TextStyleProxy implements TextStyle {
       ref.getParagraphStyle(
         textAlign: textAlign,
         textDirection: textDirection,
-        textScaleFactor: textScaleFactor,
         ellipsis: ellipsis,
         maxLines: maxLines,
         textHeightBehavior: textHeightBehavior,
@@ -283,8 +282,8 @@ abstract class _TextStyleProxy implements TextStyle {
       );
 
   @override
-  ui.TextStyle getTextStyle({double textScaleFactor = 1.0}) =>
-      ref.getTextStyle(textScaleFactor: textScaleFactor);
+  ui.TextStyle getTextStyle({TextScaler textScaler = TextScaler.noScaling, double textScaleFactor = 1.0}) =>
+      ref.getTextStyle(textScaleFactor: textScaleFactor,  textScaler : TextScaler.noScaling);
 
   @override
   bool operator ==(Object other) {
