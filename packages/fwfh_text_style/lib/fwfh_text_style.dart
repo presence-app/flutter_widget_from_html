@@ -282,8 +282,10 @@ abstract class _TextStyleProxy implements TextStyle {
       );
 
   @override
-  ui.TextStyle getTextStyle({double textScaleFactor = 1.0, TextScaler textScaler = TextScaler.noScaling}) =>
-      ref.getTextStyle(textScaler : TextScaler.noScaling);
+  ui.TextStyle getTextStyle({ double textScaleFactor = 1.0, TextScaler textScaler = TextScaler.noScaling }) {
+    throw UnimplementedError();
+  }
+
 
   @override
   bool operator ==(Object other) {
