@@ -254,6 +254,7 @@ abstract class _TextStyleProxy implements TextStyle {
     TextAlign? textAlign,
     TextDirection? textDirection,
     double textScaleFactor = 1.0,
+    TextScaler textScaler = TextScaler.noScaling,
     String? ellipsis,
     int? maxLines,
     TextHeightBehavior? textHeightBehavior,
