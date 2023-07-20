@@ -281,10 +281,12 @@ abstract class _TextStyleProxy implements TextStyle {
         strutStyle: strutStyle,
       );
 
+  /*
   @override
   ui.TextStyle getTextStyle({ double textScaleFactor = 1.0, TextScaler textScaler = TextScaler.noScaling }) {
     throw UnimplementedError();
   }
+   */
 
 
   @override
